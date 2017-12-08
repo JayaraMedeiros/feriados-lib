@@ -1,0 +1,30 @@
+{
+  "name": "feriados-lib",
+  "version": "0.8.0",
+  "description": "Biblioteca para cálculo dos feriados móveis",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel lib/calculo-feriados.js --out-file feriados.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonystein/feriados-lib.git"
+  },
+  "keywords": [
+    "feriados",
+    "pascoa",
+    "carnaval",
+    "corpus christi"
+  ],
+  "author": "Jhony Pereira <jhonystein@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhonystein/feriados-lib/issues"
+  },
+  "homepage": "https://github.com/jhonystein/feriados-lib#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
