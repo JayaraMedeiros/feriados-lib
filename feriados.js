@@ -48,31 +48,31 @@ var CalculoFeriados = function () {
   }, {
     key: "getPascoa",
     value: function getPascoa() {
-      return this._pascoa;
+      return this._pascoa.toISOString().slice(0, 10);
     }
   }, {
     key: "getSextaSanta",
     value: function getSextaSanta() {
-      var pascoa = this.getPascoa();
-      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 2);
+      var pascoa = this._pascoa;
+      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 2).toISOString().slice(0, 10);
     }
   }, {
     key: "getCarnaval",
     value: function getCarnaval() {
-      var pascoa = this.getPascoa();
-      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 47);
+      var pascoa = this._pascoa;
+      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 47).toISOString().slice(0, 10);
     }
   }, {
     key: "getQuartaCinzas",
     value: function getQuartaCinzas() {
-      var pascoa = this.getPascoa();
-      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 46);
+      var pascoa = this._pascoa;
+      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() - 46).toISOString().slice(0, 10);
     }
   }, {
     key: "getCorpusChristi",
     value: function getCorpusChristi() {
-      var pascoa = this.getPascoa();
-      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() + 60);
+      var pascoa = this._pascoa;
+      return new Date(pascoa.getFullYear(), pascoa.getMonth(), pascoa.getDate() + 60).toISOString().slice(0, 10);
     }
   }, {
     key: "getFullYear",
